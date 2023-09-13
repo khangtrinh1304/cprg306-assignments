@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 
 export default function StudentInfo() 
@@ -10,6 +11,7 @@ export default function StudentInfo()
             <nav>
                 <Link href="https://github.com/khangtrinh1304/cprg306-assignments">https://github.com/khangtrinh1304/cprg306-assignments</Link>
             </nav>
+            
         </div>
     );
 }

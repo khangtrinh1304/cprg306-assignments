@@ -14,11 +14,7 @@ export default function Home() {
         <nav>
           <Link href="../week2">week2</Link>
         </nav>
-      </div>
-      
-  
-      
-    
+      </div>    
     </main>
   );
 }
