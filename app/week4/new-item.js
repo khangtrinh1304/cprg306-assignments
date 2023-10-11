@@ -7,24 +7,23 @@ export default function NewItem()
     const [quantity, setQuantity] = useState(1);
     const [category, setCategory] = useState('produce');
 
-    const handleSubmit = (e) =>
-    {
+    const handleSubmit = (e) => {
         e.preventDefault();
-        const item = {name, quantity, category};
+        const item = { name, quantity, category };
         console.log(item);
-        alert('Name: ${name}, Quantity: ${quantity}, Category: ${category}');
+        alert("Added Item: " + name + " Quantity: " + quantity + " Category: " + category);
         setName('');
         setQuantity(1);
         setCategory('produce');
-    };
-
+      };
+      
     return(
         <div className="max w-md mx-auto mt-4 p-6 bg-blue-400 rounded shadow-md">
         <h1 className="text-2x1 font-semibold text-center text-gray-800 mb-4">Add New Item</h1>
         <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-                <label htmlFor='name' className="text-gray-600 font-medium"> Name </label>
-                <input type="text" id="name" className="border rounded-lg w-full py-2 px-3 mt-1 focus:outline-none focus:ring focus:border-blue-500"
+                <label htmlFor='Name' className="text-gray-600 font-medium"> Name </label>
+                <input type="text" id="Name" className="border rounded-lg w-full py-2 px-3 mt-1 focus:outline-none focus:ring focus:border-blue-500"
                 value={name} onChange={(e) => setName(e.target.value)} required></input>
             </div>
 
