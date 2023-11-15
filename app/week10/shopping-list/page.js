@@ -9,7 +9,7 @@ import { getItems, addItem } from "../_services/shopping-list-service";
 export default function Page() {
   const { user } = useUserAuth();
   const [items, setItems] = useState([]);
-  const [selectedItemName, setSelectedItemName] = useState(""); // Initialize selectedItemName here
+  const [selectedItemName, setSelectedItemName] = useState(""); 
 
   useEffect(() => {
     async function loadItems() {
@@ -49,7 +49,7 @@ export default function Page() {
           <NewItem onAddItem={handleAddItem} />
           <ItemList items={items} onItemSelect={handleItemSelect} />
         </div>
-        <MealIdeas ingredient={selectedItemName} /> {/* Use selectedItemName here */}
+        <MealIdeas ingredient={selectedItemName} />
       </div>
     </main>
   );
