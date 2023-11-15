@@ -42,6 +42,11 @@ export default function Home() {
       <nav className='flex items-center bg-gray-200 p-2'>
         <Link href="../week7" className="text-blue-500 font-bold hover:text-orange-500">week7</Link>
       </nav>
+      <br></br>
+
+      <nav className='flex items-center bg-gray-200 p-2'>
+        <Link href="../week8" className="text-blue-500 font-bold hover:text-orange-500">week8</Link>
+      </nav>
     </main>
   );
 }
